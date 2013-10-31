@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6A5E104C182291AA00F9F832 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A5E104B182291AA00F9F832 /* Foundation.framework */; };
+		6A5E107B1822B13500F9F832 /* HPGrowingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E10781822B13500F9F832 /* HPGrowingTextView.m */; };
+		6A5E107C1822B13500F9F832 /* HPTextViewInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E107A1822B13500F9F832 /* HPTextViewInternal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +28,10 @@
 		6A5E1048182291AA00F9F832 /* libControls.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libControls.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A5E104B182291AA00F9F832 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6A5E104F182291AA00F9F832 /* Controls-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Controls-Prefix.pch"; sourceTree = "<group>"; };
+		6A5E10771822B13500F9F832 /* HPGrowingTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPGrowingTextView.h; path = GrowingTextView/class/HPGrowingTextView.h; sourceTree = "<group>"; };
+		6A5E10781822B13500F9F832 /* HPGrowingTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPGrowingTextView.m; path = GrowingTextView/class/HPGrowingTextView.m; sourceTree = "<group>"; };
+		6A5E10791822B13500F9F832 /* HPTextViewInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPTextViewInternal.h; path = GrowingTextView/class/HPTextViewInternal.h; sourceTree = "<group>"; };
+		6A5E107A1822B13500F9F832 /* HPTextViewInternal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPTextViewInternal.m; path = GrowingTextView/class/HPTextViewInternal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,7 @@
 		6A5E103F182291AA00F9F832 = {
 			isa = PBXGroup;
 			children = (
+				6A5E107D1822B13E00F9F832 /* GrowingTextView */,
 				6A5E104E182291AA00F9F832 /* Supporting Files */,
 				6A5E104A182291AA00F9F832 /* Frameworks */,
 				6A5E1049182291AA00F9F832 /* Products */,
@@ -72,6 +79,17 @@
 			);
 			name = "Supporting Files";
 			path = Controls;
+			sourceTree = "<group>";
+		};
+		6A5E107D1822B13E00F9F832 /* GrowingTextView */ = {
+			isa = PBXGroup;
+			children = (
+				6A5E10771822B13500F9F832 /* HPGrowingTextView.h */,
+				6A5E10781822B13500F9F832 /* HPGrowingTextView.m */,
+				6A5E10791822B13500F9F832 /* HPTextViewInternal.h */,
+				6A5E107A1822B13500F9F832 /* HPTextViewInternal.m */,
+			);
+			name = GrowingTextView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A5E107C1822B13500F9F832 /* HPTextViewInternal.m in Sources */,
+				6A5E107B1822B13500F9F832 /* HPGrowingTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

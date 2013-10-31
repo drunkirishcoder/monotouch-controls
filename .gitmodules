@@ -1,0 +1,3 @@
+[submodule "Xcode.Controls/GrowingTextView"]
+	path = Xcode.Controls/GrowingTextView
+	url = https://github.com/HansPinckaers/GrowingTextView.git
