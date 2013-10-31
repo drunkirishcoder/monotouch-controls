@@ -10,6 +10,9 @@
 		6A5E104C182291AA00F9F832 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A5E104B182291AA00F9F832 /* Foundation.framework */; };
 		6A5E107B1822B13500F9F832 /* HPGrowingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E10781822B13500F9F832 /* HPGrowingTextView.m */; };
 		6A5E107C1822B13500F9F832 /* HPTextViewInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E107A1822B13500F9F832 /* HPTextViewInternal.m */; };
+		6A5E108F1822FC0900F9F832 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E108E1822FC0800F9F832 /* SWRevealViewController.m */; };
+		6A5E10911822FC5500F9F832 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A5E10901822FC5500F9F832 /* UIKit.framework */; };
+		6A5E10931822FC5D00F9F832 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A5E10921822FC5D00F9F832 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +35,10 @@
 		6A5E10781822B13500F9F832 /* HPGrowingTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPGrowingTextView.m; path = GrowingTextView/class/HPGrowingTextView.m; sourceTree = "<group>"; };
 		6A5E10791822B13500F9F832 /* HPTextViewInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPTextViewInternal.h; path = GrowingTextView/class/HPTextViewInternal.h; sourceTree = "<group>"; };
 		6A5E107A1822B13500F9F832 /* HPTextViewInternal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPTextViewInternal.m; path = GrowingTextView/class/HPTextViewInternal.m; sourceTree = "<group>"; };
+		6A5E108D1822FC0800F9F832 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		6A5E108E1822FC0800F9F832 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		6A5E10901822FC5500F9F832 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6A5E10921822FC5D00F9F832 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A5E10931822FC5D00F9F832 /* QuartzCore.framework in Frameworks */,
+				6A5E10911822FC5500F9F832 /* UIKit.framework in Frameworks */,
 				6A5E104C182291AA00F9F832 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				6A5E107D1822B13E00F9F832 /* GrowingTextView */,
+				6A5E108C1822FC0800F9F832 /* RevealViewController */,
 				6A5E104E182291AA00F9F832 /* Supporting Files */,
 				6A5E104A182291AA00F9F832 /* Frameworks */,
 				6A5E1049182291AA00F9F832 /* Products */,
@@ -67,6 +77,8 @@
 		6A5E104A182291AA00F9F832 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6A5E10921822FC5D00F9F832 /* QuartzCore.framework */,
+				6A5E10901822FC5500F9F832 /* UIKit.framework */,
 				6A5E104B182291AA00F9F832 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -90,6 +102,16 @@
 				6A5E107A1822B13500F9F832 /* HPTextViewInternal.m */,
 			);
 			name = GrowingTextView;
+			sourceTree = "<group>";
+		};
+		6A5E108C1822FC0800F9F832 /* RevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6A5E108D1822FC0800F9F832 /* SWRevealViewController.h */,
+				6A5E108E1822FC0800F9F832 /* SWRevealViewController.m */,
+			);
+			name = RevealViewController;
+			path = RevealViewController/SWRevealViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +166,7 @@
 			files = (
 				6A5E107C1822B13500F9F832 /* HPTextViewInternal.m in Sources */,
 				6A5E107B1822B13500F9F832 /* HPGrowingTextView.m in Sources */,
+				6A5E108F1822FC0900F9F832 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

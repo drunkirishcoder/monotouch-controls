@@ -1,3 +1,6 @@
 [submodule "Xcode.Controls/GrowingTextView"]
 	path = Xcode.Controls/GrowingTextView
 	url = https://github.com/HansPinckaers/GrowingTextView.git
+[submodule "Xcode.Controls/RevealViewController"]
+	path = Xcode.Controls/RevealViewController
+	url = https://github.com/John-Lluch/SWRevealViewController.git
