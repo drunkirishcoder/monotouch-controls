@@ -4,3 +4,6 @@
 [submodule "Xcode.Controls/RevealViewController"]
 	path = Xcode.Controls/RevealViewController
 	url = https://github.com/John-Lluch/SWRevealViewController.git
+[submodule "Xcode.Controls/FontAwesome"]
+	path = Xcode.Controls/FontAwesome
+	url = https://github.com/alexdrone/ios-fontawesome.git

@@ -13,6 +13,9 @@
 		6A5E108F1822FC0900F9F832 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E108E1822FC0800F9F832 /* SWRevealViewController.m */; };
 		6A5E10911822FC5500F9F832 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A5E10901822FC5500F9F832 /* UIKit.framework */; };
 		6A5E10931822FC5D00F9F832 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A5E10921822FC5D00F9F832 /* QuartzCore.framework */; };
+		6A5E109B18234DB300F9F832 /* FAImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E109618234DB300F9F832 /* FAImageView.m */; };
+		6A5E109C18234DB300F9F832 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E109818234DB300F9F832 /* NSString+FontAwesome.m */; };
+		6A5E109D18234DB300F9F832 /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E109A18234DB300F9F832 /* UIFont+FontAwesome.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +42,12 @@
 		6A5E108E1822FC0800F9F832 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		6A5E10901822FC5500F9F832 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6A5E10921822FC5D00F9F832 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6A5E109518234DB300F9F832 /* FAImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FAImageView.h; path = FontAwesome/FAImageView.h; sourceTree = "<group>"; };
+		6A5E109618234DB300F9F832 /* FAImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FAImageView.m; path = FontAwesome/FAImageView.m; sourceTree = "<group>"; };
+		6A5E109718234DB300F9F832 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+FontAwesome.h"; path = "FontAwesome/NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		6A5E109818234DB300F9F832 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+FontAwesome.m"; path = "FontAwesome/NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		6A5E109918234DB300F9F832 /* UIFont+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+FontAwesome.h"; path = "FontAwesome/UIFont+FontAwesome.h"; sourceTree = "<group>"; };
+		6A5E109A18234DB300F9F832 /* UIFont+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+FontAwesome.m"; path = "FontAwesome/UIFont+FontAwesome.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 		6A5E103F182291AA00F9F832 = {
 			isa = PBXGroup;
 			children = (
+				6A5E109418234D9C00F9F832 /* FontAwesome */,
 				6A5E107D1822B13E00F9F832 /* GrowingTextView */,
 				6A5E108C1822FC0800F9F832 /* RevealViewController */,
 				6A5E104E182291AA00F9F832 /* Supporting Files */,
@@ -114,6 +124,19 @@
 			path = RevealViewController/SWRevealViewController;
 			sourceTree = "<group>";
 		};
+		6A5E109418234D9C00F9F832 /* FontAwesome */ = {
+			isa = PBXGroup;
+			children = (
+				6A5E109518234DB300F9F832 /* FAImageView.h */,
+				6A5E109618234DB300F9F832 /* FAImageView.m */,
+				6A5E109718234DB300F9F832 /* NSString+FontAwesome.h */,
+				6A5E109818234DB300F9F832 /* NSString+FontAwesome.m */,
+				6A5E109918234DB300F9F832 /* UIFont+FontAwesome.h */,
+				6A5E109A18234DB300F9F832 /* UIFont+FontAwesome.m */,
+			);
+			name = FontAwesome;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,9 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A5E109C18234DB300F9F832 /* NSString+FontAwesome.m in Sources */,
 				6A5E107C1822B13500F9F832 /* HPTextViewInternal.m in Sources */,
+				6A5E109B18234DB300F9F832 /* FAImageView.m in Sources */,
 				6A5E107B1822B13500F9F832 /* HPGrowingTextView.m in Sources */,
 				6A5E108F1822FC0900F9F832 /* SWRevealViewController.m in Sources */,
+				6A5E109D18234DB300F9F832 /* UIFont+FontAwesome.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
