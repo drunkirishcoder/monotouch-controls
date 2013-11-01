@@ -270,4 +270,44 @@ namespace MonoTouch.Controls
 	}
 
 	#endregion
+
+	#region FontAwesome
+
+	[Category, Internal, BaseType (typeof (NSString))]
+	public partial interface FontAwesome_NSString
+	{
+		[Static, Export ("fontAwesomeEnumForIconIdentifier:")]
+		FAIcon EnumForFontAwesomeIconIdentifier(string identifier);
+
+		[Static, Export ("fontAwesomeIconStringForEnum:")]
+		string IconStringForFontAwesomeEnum(FAIcon value);
+
+		[Static, Export ("fontAwesomeIconStringForIconIdentifier:")]
+		string IconStringForFontAwesomeIconIdentifier(string identifier);
+	}
+
+//	[Category, Internal, BaseType (typeof (UIFont))]
+//	public partial interface FontAwesome_UIFont
+//	{
+//		[Static, Export ("fontAwesomeFontOfSize:")]
+//		UIFont FontAwesomeFontOfSize(float size);
+//	}
+
+	[BaseType (typeof (UIImageView))]
+	public partial interface FAImageView
+	{
+		[Export ("defaultIconColor", ArgumentSemantic.Retain)]
+		UIColor DefaultIconColor { get; set; }
+
+		[Export ("defaultIconIdentifier", ArgumentSemantic.Retain)]
+		string DefaultIconIdentifier { get; set; }
+
+		[Export ("defaultIcon")]
+		FAIcon DefaultIcon { get; set; }
+
+		[Export ("defaultView", ArgumentSemantic.Retain)]
+		UILabel DefaultView { get; set; }
+	}
+
+	#endregion
 }

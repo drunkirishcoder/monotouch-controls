@@ -53,5 +53,9 @@
     <Compile Include="libControls.linkwith.cs">
       <DependentUpon>libControls.a</DependentUpon>
     </Compile>
+    <Compile Include="Extras.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FontAwesome.ttf" />
   </ItemGroup>
 </Project>
